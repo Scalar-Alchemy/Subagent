@@ -1,0 +1,80 @@
+{
+  "cycle_complete": true,
+  "timestamp": "Auckland-bench ready",
+  "geometric_spine": {
+    "mean_axial_torsion": 4.908346085130688e-08,
+    "vacuum_density": 0.0,
+    "plv": 0.85,
+    "upsilon": 0.85,
+    "caf": 0.0007278867997229099,
+    "propagating": false
+  },
+  "gpe": {
+    "final_norm": 1.0000370740890503,
+    "final_energy": 111.10116577148438,
+    "num_steps": 50,
+    "converged": true
+  },
+  "caf_cascade": {
+    "caf": 0.0007278867997229099,
+    "upsilon": 0.85,
+    "tier_name": "Below Threshold",
+    "tier_enum": "BELOW_THRESHOLD",
+    "caf_range": [
+      0.0,
+      8.0
+    ],
+    "physical_outcome": "Transient glow only",
+    "geometric_gain": 1.0001819716999307,
+    "stability_margin": 0.0007278867997229099,
+    "tier_properties": {
+      "name": "Below Threshold",
+      "caf_min": 0.0,
+      "caf_max": 8.0,
+      "physical_outcome": "Transient glow only",
+      "geometric_gain": 1.0
+    }
+  },
+  "ethical_status": {
+    "d_kl": 0.0,
+    "d_kl_stable_threshold": 0.12,
+    "d_kl_collapse_threshold": 0.28,
+    "d_kl_termination_threshold": 0.45,
+    "stability_status": "STABLE",
+    "collapse_triggered": false,
+    "termination_triggered": false,
+    "collapse_time_s": 2.0
+  },
+  "transducer": {
+    "transducer_enabled": true,
+    "eeg_plv": 0.85,
+    "caf": 0.0007278867997229099,
+    "rf_power_w": 25.0,
+    "rf_frequency_ghz": 2.45,
+    "nucleation_success_probability": 0.9958388209342957,
+    "nucleation_gate_info": {
+      "nucleation_enabled": true,
+      "eeg_plv": 0.85,
+      "eeg_plv_gate_threshold": 0.85,
+      "plv_gate_open": true,
+      "rf_power_w": 25.0,
+      "rf_power_sufficient": true,
+      "resonance": 1.0,
+      "resonance_good": true
+    },
+    "resonator_q_factor": 500.0,
+    "nucleation_time_s": 2.0
+  },
+  "density_profile": {
+    "peak": 0.00021056117839179933,
+    "mean": 3.81470772481407e-06
+  },
+  "summary": {
+    "eeg_plv": 0.85,
+    "kuramoto_upsilon": 0.85,
+    "caf": 0.0007278867997229099,
+    "tier": "Below Threshold",
+    "nucleation_possible": true,
+    "ethically_cleared": true
+  }
+}

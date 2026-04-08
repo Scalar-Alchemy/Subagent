@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsnn-p"
+version = "0.1.0"
+description = "Unified Geometric Spine for Temporal Spatial Navigation and Plasmoid Reality Engineering"
+requires-python = ">=3.10"
+dependencies = [
+    "jax[cpu]",
+    "jaxlib",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pyyaml",
+    "h5py",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "mypy",
+    "ipykernel",
+]
+gpu = [
+    "jax[cuda12]",
+]
+heavy = [
+    "pyscf",
+    "torch",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true

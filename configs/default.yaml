@@ -1,0 +1,26 @@
+grid:
+  resolution: 1024  # 512^3 – 2048^3
+  dimensions: 3
+
+simulation:
+  time_step_fs: 0.5        # 0.1 – 1 fs
+  torsion_coupling_q: 0.8  # 0.1 – 1.5
+  gamma_band_hz: 42        # 40 – 44 Hz
+
+coherence:
+  mmd_threshold: 0.28      # 0.20 – 0.35, malice pruning sensitivity
+  kuramoto_upsilon: 0.85   # 0.80 – 0.90, supercritical coherence onset
+  caf_tier2_cutoff: 12     # empirical from afterglow & buoyancy
+
+nanopore:
+  radius_nm: 25            # 10 – 50 nm, YAG:Ce aerogel typical
+  volume_m3: 1.0e-12       # per pore
+
+vacuum_thrust:
+  asymmetry_factor: 0.45   # 0.3 – 0.6 in TSNN-P geometry
+  plv_exponent: 1.35
+  mirror_velocity_exp: 1.47
+
+screening:
+  yukawa_form: true
+  mu_squared: "kappa * rho_spin * upsilon^2"
